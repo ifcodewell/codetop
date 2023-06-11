@@ -1,0 +1,9 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(½çù…
+S	java:S106"9Replace this use of System.out or System.err by a logger.( ÊƒËúÿÿÿÿ
+3
+java:S2119$"Save and re-use this "Random".(¼İÅf
+:
+java:S1659+"Declare "i" on a separate line.(ŞÀ¶Óúÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
