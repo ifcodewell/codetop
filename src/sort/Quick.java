@@ -21,42 +21,41 @@ public class Quick {
         quick(a, i+1, r);
     }
 
-////    单边循环快排
-//    public static int partition(int[] a, int l, int r){
-//        int basic = a[r];
-//        int i = l;
-//        for(int j = l; j < r; j++){
-//            if(a[j] < basic){
-//                swap(a, i, j);
-//                i++;
-//            }
-//        }
-//        if(r!=i){
-//            swap(a,r,i);
-//        }
-//        System.out.println(Arrays.toString(a));
-//        return i;
-//    }
+//    单边循环快排
+    public static int partition(int[] a, int l, int r){
+        int basic = a[r];
+        int i = l;
+        for(int j = l; j < r; j++){
+            if(a[j] < basic){
+                swap(a, i, j);
+                i++;
+            }
+        }
+        if(r!=i){
+            swap(a,r,i);
+        }
+        return i;
+    }
 
 
 //    双边循环快排
-    public static int partition(int[] a, int l, int r){
-        int basic = a[l];
-        int i = l; //从前往后找大的
-        int j = r; //从后往前找小的
-        while(i < j){
-//            必须先j后i
-            while(i < j && a[j] > basic){
-                j--;
-            }
-            while(i < j && a[i] <= basic){
-                i++;
-            }
-            swap(a, i, j);
-        }
-        swap(a, l, i);
-        return i;
-    }
+//    public static int partition(int[] a, int l, int r){
+//        int basic = a[l];
+//        int i = l; //从前往后找大的
+//        int j = r; //从后往前找小的
+//        while(i < j){
+////            必须先j后i
+//            while(i < j && a[j] > basic){
+//                j--;
+//            }
+//            while(i < j && a[i] <= basic){
+//                i++;
+//            }
+//            swap(a, i, j);
+//        }
+//        swap(a, l, i);
+//        return i;
+//    }
 
     public static void swap(int[] a, int i, int j){
         int temp = 0;

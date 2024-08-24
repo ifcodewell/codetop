@@ -9,7 +9,7 @@ public class Insert {
     }
 
     public static void insert(int[] a){
-        //            i表示待插入元素的索引
+        // i表示待插入元素的索引
         for (int i =1; i<a.length; i++){
             //临时变量存储待插入的值
             int t = a[i];
